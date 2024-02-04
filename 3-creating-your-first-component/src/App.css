@@ -12,3 +12,9 @@
     font-size: 48px;
     color: blueviolet;
 }
+
+.profile-picture {
+    height: 390px;
+    border-radius: 20px;
+  }
+  
