@@ -1,36 +1,25 @@
 import "./App.css";
+import { useState } from "react";
 
 const App = () => {
-  let fontColor = "red";
-  const handleClick = () => {
-    console.log("I was clicked!");
-    fontColor = fontColor === "red" ? "blue" : "red";
-    document.querySelector("h1").style.color = fontColor;
+  const [age, setAge] = useState(25);
+
+  const handleAgeIncrease = () => {
+    setAge(age + 1);
   };
 
-  const handleMouseMove = () => {
-    console.log("mouse moved");
-  };
-
-  const handleInputChange = (event) => {
-    console.log(event);
-  };
-
-  const handleFormSubmit = (event) => {
-    event.preventDefault();
-    console.log(event.target.value);
+  const handleAgeDecrease = () => {
+    //TODO: Implement this function to decrease age
   };
 
   return (
     <div className="app">
-      <h1 style={{ color: fontColor }} onMouseMove={handleMouseMove}>
-        Creating React Components
-      </h1>
-      <button onClick={handleClick}>Click Me To Change Font Color</button>
+      <h1>Learning useState</h1>
+      <div className="age">
+        <p>I am {age} years old </p>
+      </div>
 
-      <form onSubmit={handleFormSubmit}>
-        <input type="text" onChange={handleInputChange}></input>
-      </form>
+      <button onClick={handleAgeIncrease}>Increment age </button>
     </div>
   );
 };
