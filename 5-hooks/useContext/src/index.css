@@ -1,21 +1,19 @@
 body {
     margin: 0;
     padding: 0;
+    color: black;
   }
   .app {
     text-align: center;
-    display: inline-block;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
-    width: 100vh;
+    width: 100%;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       "Helvetica Neue", Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 1.6rem;
   }
   
@@ -36,8 +34,6 @@ body {
   
   button {
     padding: 10px 20px;
-    background-color: dodgerblue;
-    color: white;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -45,25 +41,4 @@ body {
     font-size: 1.3rem;
   }
   
-  .theme-light {
-    background-color: white;
-    color: black;
-  }
-  
-  .theme-dark {
-    background-color: black;
-    color: white;
-  }
-  
-  .button-light {
-    background-color: dodgerblue;
-    color: white;
-    padding: 40px;
-  }
-  
-  .button-dark {
-    background-color: purple;
-    color: white;
-    padding: 40px;
-  }
-  
+  .
