@@ -3,29 +3,26 @@ import { useState } from "react";
 
 const App = () => {
   const [age, setAge] = useState(25);
-  const [name, setName] = useState("");
+  const [year, setYear] = useState(2024);
 
   const handleAgeIncrease = () => {
     setAge(age + 1);
   };
 
-  const handleNameChange = (event) => {
-    const { value } = event.target;
-    setName(value);
+  const handleYearIncrease = () => {
+    setYear(year + 1);
   };
 
   return (
     <div className="app">
       <h1>Learning useState</h1>
-      <div className="age">
-        <p>
-          I am {name} and I am {age} years old{" "}
-        </p>
-        <label htmlFor="nameInput">Enter your name:</label>
-        <input type="text" id="nameInput" onChange={handleNameChange}></input>
-      </div>
 
+      <div className="age">
+        <p> I am {age} years old</p>
+        <p> This is year {year}</p>
+      </div>
       <button onClick={handleAgeIncrease}>Increment age </button>
+      <button onClick={handleYearIncrease}>Increment year </button>
     </div>
   );
 };

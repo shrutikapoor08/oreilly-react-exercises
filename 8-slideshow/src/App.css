@@ -1,6 +1,7 @@
 body {
     margin: 0;
    font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.2em;
   }
   
 
@@ -9,6 +10,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-  
+  button{
+    padding: 20px;
+    font-size: 21px;
+    border-radius: 10px;
+    background-color: white;
+  }
